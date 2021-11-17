@@ -1,0 +1,101 @@
+%social-props {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card);
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 1rem;
+    margin-bottom: 24px;
+}
+.facebook {
+    @extend %social-props;
+    border-top: 5px solid var(--facebook);
+    
+    h3{
+        color:  var(--text1);
+        font-size: 0.9rem;    
+    }
+
+    h4{
+        color: var(--limegreen);
+    }
+}
+.twitter {
+    @extend %social-props;
+    border-top: 5px solid var(--twitter);
+
+    h3{
+        color:  var(--text1);
+        font-size: 0.9rem;    
+    }
+
+    h4{
+        color: var(--limegreen);
+    }
+}
+.instagram {
+    @extend %social-props;
+    border-top: 5px solid;
+    border-image-source: linear-gradient(90deg, #fdc468 0%, #df4996 100%);
+    border-image-slice: 1;
+
+    h3{
+        color:  var(--text1);
+        font-size: 0.9rem;    
+    }
+
+    h4{
+        color: var(--limegreen);
+    }
+}
+.youtube {
+    @extend %social-props;
+    border-top: 5px solid var(--youtube);
+
+    h3{
+        color:  var(--text1);
+        font-size: 0.9rem;    
+    }
+
+    h4{
+        color: var(--brightred);
+    }
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    color: var(--text1);
+    margin-bottom: -30px;
+}
+.current-number {
+    font-size: 3.25rem;
+    color: var(--text2);
+    margin-bottom: -15px;
+}
+.handle {
+    font-weight: 700;
+}
+.subjects {
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin-bottom: 0px;
+}
+.socials {
+    cursor: pointer;
+    position: relative;
+}
+.facebook .update, .twitter .update, .instagram .update, .youtube .update {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+
+
+
